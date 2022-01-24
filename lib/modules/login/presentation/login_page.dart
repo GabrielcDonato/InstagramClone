@@ -39,7 +39,6 @@ class _LoginPageState extends State<LoginPage> {
                   autofocus: true,
                   underline:
                       const SizedBox(), //tirar a linha em baixo do texto.
-                  iconEnabledColor: Colors.black54,
                   dropdownColor: Colors.white,
                   alignment: Alignment.center,
                   value: value,
@@ -104,7 +103,9 @@ class _LoginPageState extends State<LoginPage> {
                   style: const ButtonStyle(
                     alignment: Alignment.center,
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.popAndPushNamed(context, '/home_page');
+                  },
                   child: const Text("Log In"),
                 ),
               ),

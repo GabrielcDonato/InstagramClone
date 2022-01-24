@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:instagram_clone/modules/home/presentation/home_page.dart';
 import 'package:instagram_clone/modules/login/presentation/login_page.dart';
 
 class RouteGenerator {
@@ -7,6 +8,10 @@ class RouteGenerator {
       //Login:
       case '/login':
         return MaterialPageRoute(builder: (context) => const LoginPage());
+
+      //Home:
+      case '/home_page':
+        return MaterialPageRoute(builder: (context) => const HomePage());
     }
   }
 }
